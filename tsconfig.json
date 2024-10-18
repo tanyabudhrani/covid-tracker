@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "jsx": "react-jsx",  // Enables JSX support for React
+    "esModuleInterop": true,  // Allows interop between CommonJS and ES modules
+    "allowSyntheticDefaultImports": true  // Allows default imports from modules with no default export
+  }
+}
