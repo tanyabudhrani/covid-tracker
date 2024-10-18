@@ -11,7 +11,7 @@ COVID-19 Tracker is a web application built using **React** and **TypeScript** t
 - **React Simple Maps**: Provides an easy way to integrate maps into your React project.
 
 ## Demo
-[Add a link here if you plan to deploy the application, such as on GitHub Pages or Vercel]
+![alt text](demo1.png)
 
 ## Tech Stack
 
@@ -69,6 +69,8 @@ npm run build
 - Hover over a country to display the number of cases, deaths, recoveries, and active COVID-19 cases in that country.
 - Use the search functionality to quickly access data for a specific country.
 - The map dynamically updates based on real-time COVID-19 statistics.
+
+![alt text](demoMap.png)
 
 
 ### Customization
