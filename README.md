@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# COVID-19 Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+COVID-19 Tracker is a web application built using **React** and **TypeScript** that provides real-time global and country-specific statistics on COVID-19 cases, deaths, recoveries, and active cases. It features an interactive world map that allows users to hover over countries and view detailed statistics for each nation. The app uses the **disease.sh API** for real-time data and is styled with **TailwindCSS**.
 
-## Available Scripts
+## Features
+- **Interactive World Map**: Hover over countries to view COVID-19 statistics.
+- **Real-Time Data**: Fetches live data from the disease.sh API.
+- **Country Search**: Quickly search for any country to view its COVID-19 stats.
+- **Responsive Design**: Designed to work well on mobile, tablet, and desktop devices.
+- **React Simple Maps**: Provides an easy way to integrate maps into your React project.
 
-In the project directory, you can run:
+## Demo
+[Add a link here if you plan to deploy the application, such as on GitHub Pages or Vercel]
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+| Technology | Badge |
+|------------|-------|
+| React      | ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) |
+| TypeScript | ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) |
+| TailwindCSS | ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) |
+| Axios      | ![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white) |
+| D3.js      | ![D3.js](https://img.shields.io/badge/D3.js-F9A03C?style=for-the-badge&logo=d3.js&logoColor=white) |
+| Radix UI   | ![Radix UI](https://img.shields.io/badge/Radix%20UI-2E2E2E?style=for-the-badge&logo=radix-ui&logoColor=white) |
+| Disease.sh API | ![Disease.sh API](https://img.shields.io/badge/Disease.sh%20API-1E90FF?style=for-the-badge) |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Prerequisites
+Before running the project, make sure you have the following installed:
+- **Node.js** (version 14 or later)
+- npm (Node Package Manager) or Yarn
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Clone the repository:
+```bash
+git clone https://github.com/your-username/covid-tracker.git
+cd covid-tracker
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. Install the Dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+# Using npm
+npm install
 
-### `npm run eject`
+# Using yarn
+yarn install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 3. Run the Application
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm start
+```
+The app will be accessible at http://localhost:3000
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 4. Build for production
+```
+npm run build
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+#### Map Interaction
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Hover over a country to display the number of cases, deaths, recoveries, and active COVID-19 cases in that country.
+- Use the search functionality to quickly access data for a specific country.
+- The map dynamically updates based on real-time COVID-19 statistics.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Customization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Map Data: If needed, you can replace the GeoJSON file used for the map by modifying the geoUrl in the code.
+- API: The app fetches data from the disease.sh API. You can replace this with another API if needed by updating the relevant Axios requests in the code.
 
-### Analyzing the Bundle Size
+## API Reference
+The app uses the disease.sh API to fetch real-time COVID-19 data:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+| Type | Parameter     | 
+| :-------- | :------- | 
+| Global Data: | (https://disease.sh/v3/covid-19/all) | 
+| Country Data | (https://disease.sh/v3/covid-19/countries) |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
